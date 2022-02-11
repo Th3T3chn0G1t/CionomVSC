@@ -1,0 +1,25 @@
+{
+    "name": "CionomVSC",
+    "displayName": "CíonomVSC",
+    "description": "Cíonom language support for VSCode",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.64.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "cionom",
+            "aliases": ["Cíonom", "cionom"],
+            "extensions": [".cio"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "cionom",
+            "scopeName": "source.cio",
+            "path": "./syntaxes/cionom.tmLanguage.json"
+        }]
+    }
+}

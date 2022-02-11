@@ -1,0 +1,29 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Cíonom",
+	"patterns": [
+		{
+			"include": "#entities"
+		},
+		{
+			"include": "#constants"
+		}
+	],
+	"repository": {
+		"entities": {
+			"patterns": [{
+				"name": "entity.name.function.cionom",
+				"match": "[^:0-9\\s]\\S*(?=[\\s:])"
+			}]
+		},
+		"constants": {
+			"patterns": [
+				{
+					"name": "constant.numeric.cionom",
+					"match": "[0-9]+"
+				}
+			]
+		}
+	},
+	"scopeName": "source.cio"
+}
